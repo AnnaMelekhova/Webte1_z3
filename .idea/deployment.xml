@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="webtech1" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="webtech1">
+        <serverdata>
+          <mappings>
+            <mapping deploy="z3ma" local="$PROJECT_DIR$" web="z3ma" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
