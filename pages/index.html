@@ -8,12 +8,122 @@
 </head>
 <body>
 
-<div class="container">
-<div class="py-5 text-center">
-    <h1>Formulár </h1>
-    <p class="lead">Some text here.</p>
+<div class="container-md">
+    <div class="py-5 text-center">
+    <h1 >Formulár </h1>
+    <p class="lead">Vyplňte prosím formulár</p>
 </div>
+<div class="row">
+    <div class="col-md-4 order-md-2 mb-4">
+        <h4>Čo potrebujete vedieť:</h4>
+        <hr class="mb-4">
+        <ul>
+            <li>Uveďte Vaše skutočne údaje.</li>
+            <li>Meno musí byť plné.</li>
+            <li>Ak chcete vybrať možnosť dovozu, uveďte presnú adresu.</li>
+        </ul>
+         </div>
+    <div class="col-md-8 order-md-1">
+        <h2>Údaje</h2>
+        <form class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="firstName">Meno</label>
+                <input type="text" class="form-control" id="firstName" placeholder="John" required>
+                <div class="invalid-feedback">Valid first name is required.</div>
+            </div>
+            <div class="mb-3">
+                <label for="lastName">Priezvisko</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Smith" required>
+                <div class="invalid-feedback">Valid last name is required.</div>
+            </div>
+            <div class="mb-3">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="xyz@mail.xyz" required>
+                <div class="invalid-feedback">Valid email is required.</div>
+            </div>
+            <div class="row">
+                <div class="col md-5 mb-3">
+                    <label for="country">Štát</label>
+                    <select class="custom-select d-block w-100" id="country" required>
+                        <option value>Vybrať...</option>
+                        <option value="cz">Česko</option>
+                        <option value="sk">Slovensko</option>
+                        <option value="at">Rakúsko</option>
+                    </select>
+                    <div class="invalid-feedback">Valid email is required.</div>
+                </div>
+                <div class="col md-5 mb-3">
+                    <label for="city">Mesto</label>
+                    <select class="custom-select d-block w-100" id="city" required>
+                        <option value>Vybrať...</option>
+                        <option value="ba">Bratislava</option>
+                        <option value="pr">Praha</option>
+                        <option value="vie">Viedeň</option>
+                    </select>
+                    <div class="invalid-feedback">Valid email is required.</div>
+                </div>
+            </div>
+           <div class="row">
+               <div class="col-md-4">
+                   <label for="birthday">Dátum narodenia</label>
+                   <input class="form-control" type="date" id="birthday" name="birthday">
+               </div>
+               <div class="col-md-4">
+                   <label for="age">Vek</label>
+                   <input class="form-control" id="age" type="number">
+                   <div class="invalid-feedback">Valid age is required.</div>
+               </div>
+           </div>
+            <hr class="mb-4">
+            <h3 class="mb-4">Návrh balenia </h3>
+            <div class="custom-control custom custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="darcBal">
+             <label class="custom-control-label" for="darcBal">
+                 Darčekové balenie
+             </label>
+            </div>
+            <div class="custom-control custom custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="blahozKnar">
+                <label class="custom-control-label" for="blahozKnar">
+                    Blahoželanie k narodeninám na obale
+                </label>
+            </div>
+            <div class="custom-control custom custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="yourOption">
+                <label class="custom-control-label" for="yourOption">
+                    Iné požiadavky <input type="text" class="form-control" placeholder="Napíšte sem">
+                </label>
+            </div>
+            <hr class="mb-4">
+            <h4 class="mb-4">Miesto vyzdvihnutia</h4>
+            <div class="d-block my-2">
+                <div class="custom-control custom-radio">
+                <input id="eurovea"  name="oneChoice"  type="radio" class="custom-control-input" checked required>
+                    <label class="custom-control-label" for="eurovea">
+                        Eurovea
+                    </label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input id="aupark"  name="oneChoice"  type="radio" class="custom-control-input" checked required>
+                    <label class="custom-control-label" for="aupark">
+                        Aupark
+                    </label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input id="dovoz"  name="oneChoice"  type="radio" class="custom-control-input" checked required>
+                    <label class="custom-control-label" for="dovoz">
+                        Dovoz <input type="text" class="form-control" placeholder="Napíšte sem adresu">
+                    </label>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-dark btn-block" type="submit">Potvrdiť</button>
+        </form>
+    </div>
 </div>
-
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">@Všetké práva vyhradené</p>
+    </footer>
+</div>
 </body>
 </html>
